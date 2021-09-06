@@ -1,0 +1,64 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .imagenFondoIndex {
+    background-image: url(img/Version2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    /* background-blend-mode: saturation; */
+  }
+ 
+   
+
+
+
+     .header{
+         .nombre{ outline: 3px solid blue;
+                 font-family: 'Shrikhand', cursive ;
+                 text-align: center;
+                 margin-top: 5rem;
+        }
+
+         .secciones{ outline: 3px solid yellow;
+                  width: 100vw;
+                  text-align: center;
+             ul{
+                 li  {outline: 3px solid red;
+                      list-style: none;
+                      display: inline-block;
+                    
+                      padding-left: 5rem;
+                      padding-right: 5rem;
+                      padding-top: 1rem;
+                      padding-bottom: 2rem;
+                      margin-top: 3rem;
+                      font-family:'Shrikhand', cursive ;
+                      
+                      a{
+                          color: rgb(43, 42, 42);
+                          text-decoration: none;
+                          font-size: 16px;
+                      }
+                      
+                          
+                
+                      
+                 }
+             }
+            
+        }
+    }
+
+
+
+
+    .carousel-inner{
+       
+        margin-left: 25%;
+        margin-right: 25%;
+    }
