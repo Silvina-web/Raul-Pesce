@@ -17,48 +17,114 @@
 
 
 
-     .header{
+     .titulo{
          .nombre{ outline: 3px solid blue;
                  font-family: 'Shrikhand', cursive ;
                  text-align: center;
-                 margin-top: 5rem;
+                 margin-top: 4rem;
         }
-
-         .secciones{ outline: 3px solid yellow;
-                  width: 100vw;
-                  text-align: center;
-             ul{
-                 li  {outline: 3px solid red;
-                      list-style: none;
-                      display: inline-block;
-                    
-                      padding-left: 5rem;
-                      padding-right: 5rem;
-                      padding-top: 1rem;
-                      padding-bottom: 2rem;
-                      margin-top: 3rem;
-                      font-family:'Shrikhand', cursive ;
-                      
-                      a{
-                          color: rgb(43, 42, 42);
-                          text-decoration: none;
-                          font-size: 16px;
-                      }
-                      
-                          
-                
-                      
-                 }
              }
+
+
+header{
+      #btn-menu{
+              display: none;
+                }
+
+
+    label{
+        display: none; 
+         width: 30px;
+        height: 30px;  
+        padding: 1rem;
+
+      
+
+
+    }
+}
+
+
+
+.secciones{
+    ul{outline: 1px solid red;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        list-style: none;
+        display: flex;
+        
+    }
+
+
+
+    li{ flex-grow: 1;
+        text-align: center;
+
+        a{  display: block;
+            font-family:'Shrikhand', cursive ; 
+            text-decoration: none;
+            color: rgb(27, 26, 26);
             
+
+          &:hover {
+                color: rgb(129, 129, 138);
+                   }
         }
     }
 
 
+       }
+
+
+
+@media screen and (max-width: 770px) {
+.titulo .nombre{
+    margin-top: -0.6rem;
+}
+    
+ header label{
+        display: block;
+
+       
+    }
+  
+ .secciones{ 
+        position: absolute;
+      
+        margin-left: -50%;
+       /*  margin-top: 20%;  */
+        transition: all 0.5s;
+       
+        
+          ul{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+    }
+   /*  #btn-menu:checked ~ *.secciones {
+        margin: 0;
+        
+    } */
+
+ 
+    #btn-menu:checked~.secciones{
+        margin: 0px;
+        margin-top: -2rem;
+        
+      }
+    
+    
+}
+      
 
 
     .carousel-inner{
        
         margin-left: 25%;
         margin-right: 25%;
+
+        @media screen and (max-width: 770px) {
+            margin-top: 7rem;
+        } 
     }
