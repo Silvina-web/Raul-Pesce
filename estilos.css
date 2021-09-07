@@ -14,7 +14,6 @@
 }
 
 .titulo .nombre {
-  outline: 3px solid blue;
   font-family: 'Shrikhand', cursive;
   text-align: center;
   margin-top: 4rem;
@@ -32,7 +31,6 @@ header label {
 }
 
 .secciones ul {
-  outline: 1px solid red;
   margin-top: 2rem;
   margin-bottom: 3rem;
   list-style: none;
